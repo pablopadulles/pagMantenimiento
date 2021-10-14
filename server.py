@@ -2,7 +2,6 @@ from flask import Flask, render_template, Response, jsonify, request, url_for, r
 
 
 app = Flask(__name__)
-configfile = os.environ.get('FLASK_CONFIG')
 app.secret_key = b'p\xa6]\xda\xbe\xfd\xc4{b\xffk$\xfd\x13\xe8(\x1e\x14\x03p\x03P\x08B@\xec\xe0\xde\xa3S\x03k'
 
 @app.route('/home')
