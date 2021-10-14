@@ -9,7 +9,6 @@ app.secret_key = b'p\xa6]\xda\xbe\xfd\xc4{b\xffk$\xfd\x13\xe8(\x1e\x14\x03p\x03P
 @app.route('/home.html')
 @app.route('/index.html')
 @app.route('/', methods=["GET", "POST"])
-@tryton.transaction()
 def index():
     if request.method == "GET":
         return render_template('actualizando.html')
